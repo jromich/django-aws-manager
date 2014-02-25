@@ -3,6 +3,16 @@ Django AWS Manager
 
 Django AWS Manager is a django app that allows you to view and manage Amazon EC2 instances.  It can be useful as a way to access your server quickly from the admin screen and remote desktop.  The servers can be shut off during off hours (e.g., outside of market hours for a trading server) to save costs.
 
+Install
+-----------
+
+> pip install django-aws-manager
+
+or for the latest from github:
+
+> pip install -e  git+https://github.com/jromich/django-aws-manager.git#egg=django-aws-manager
+
+
 Quick start
 -----------
 

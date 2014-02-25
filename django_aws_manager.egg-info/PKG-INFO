@@ -1,6 +1,6 @@
 Metadata-Version: 1.1
 Name: django-aws-manager
-Version: 0.1
+Version: 0.1.1
 Summary: A  Django app to manage Amazon AWS servers.
 Home-page: https://github.com/jromich/django-aws-manager
 Author: Joe Rothermich
