@@ -8,7 +8,6 @@ class AWSServer(models.Model):
     aws_secret_key = models.CharField(max_length=40)
     aws_region = models.CharField(max_length=20, default='us-east-1')
     user_name = models.CharField(max_length=20, default='Administrator')
-#    instance_type = models.CharField(max_length=20, )
 
     def __unicode__(self):
         return self.name

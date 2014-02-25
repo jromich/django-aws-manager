@@ -1,0 +1,4 @@
+include LICENSE
+include README.rst
+recursive-include aws-manager/static *
+recursive-include aws-manager/templates *

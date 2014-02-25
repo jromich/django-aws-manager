@@ -6,18 +6,18 @@ Django AWS Manager is a django app that allows you to view and manage Amazon EC2
 Quick start
 -----------
 
-1. Add "django-aws-manager" to your INSTALLED_APPS setting like this::
+1. Add "aws-manager" to your INSTALLED_APPS setting like this::
 
     INSTALLED_APPS = (
         ...
-        'django-aws-manager',
+        'aws-manager',
     )
 
 2. Include the aws_manager URLconf in your project urls.py like this::
 
-    url(r'^aws-manager/', include('django-aws_manager.urls')),
+    url(r'^aws-manager/', include('aws_manager.urls')),
 
-3. Run `python manage.py migrate` to create the django-aws-manager models (or add it using south)
+3. Run `python manage.py migrate` to create the aws-manager models (or add it using south)
 
 4. register the app with your admin in admin.py
 
@@ -35,12 +35,9 @@ Usage
 - A management command can be used to start and stop the servers from the command line
 e.g.,
 
-> python manage.py django-aws-server <servername> start
+> python manage.py aws-server *servername* start
 
-Available management commands: start, stop, state, start-wkdays-only, stop-wkdays-only
+> Available management commands: start, stop, state, start-wkdays-only, stop-wkdays-only
 
-- the starting and stopping of the servers can be scheduled using chron or heroku scheduler with the management commands
-
-
--------
+- Starting and stopping of the servers can be scheduled using chron or heroku scheduler with the management commands
 
