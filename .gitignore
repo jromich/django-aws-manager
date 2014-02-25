@@ -8,3 +8,4 @@ venv
 static
 *.sublime-project
 misc
+*.sqlite3

@@ -9,7 +9,7 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 setup(
     name='django-aws-manager',
     version='0.1',
-    packages=['aws-manager'],
+    packages=['aws_manager'],
     include_package_data=True,
     license='BSD License',  # example license
     description='A  Django app to manage Amazon AWS servers.',
