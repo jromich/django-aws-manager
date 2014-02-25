@@ -4,15 +4,19 @@ from django.utils import timezone
 from aws_manager.models import AWSServer
 
 class Command(BaseCommand):
+    """
+    Can be used to manage EC2 servers from the command line
+    or a scheduler
+    """
     help = 'starts an aws ec2 server.  requires server name as argument'
     usage_str = "Usage: ./manage.py start-stop server_name action"
 
     def is_weekday(self):
+        """ check to see if it's a weekday"""
         d = timezone.now()
         return d.isoweekday() in range(1, 6)
 
     def handle(self, server_name=None, action=None,*args, **options):
-
         # make sure a server name is passed
         if not server_name:
             print "Please specify a server name matching the EC2 name."

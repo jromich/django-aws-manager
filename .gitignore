@@ -9,3 +9,5 @@ static
 *.sublime-project
 misc
 *.sqlite3
+*.egg-info
+dist
