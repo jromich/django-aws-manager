@@ -1,0 +1,10 @@
+*.log
+*.pot
+*.pyc
+local_settings.py
+venv
+.project
+*~
+static
+*.sublime-project
+misc
