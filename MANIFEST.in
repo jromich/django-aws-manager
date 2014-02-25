@@ -1,2 +1,3 @@
 include LICENSE
 include README.rst
+recursive-include aws_manager/management/commands *.py

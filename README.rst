@@ -45,7 +45,7 @@ Usage
 - A management command can be used to start and stop the servers from the command line e.g.::
 
     python manage.py aws-server *servername* start
-    
+
     (Available management commands: start, stop, state, start-wkdays-only, stop-wkdays-only)
 
 - Starting and stopping of the servers can be scheduled using chron or heroku scheduler with the management commands
