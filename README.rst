@@ -29,7 +29,11 @@ Quick start
 
 3. Run `python manage.py migrate` to create the aws-manager models (or add it using south)
 
-4. register the app with your admin in admin.py
+4. register the app with your admin in admin.py::
+
+    from aws_manager.models import AWSServer
+    from aws_manager.admin import AWSServerAdmin
+    admin.site.register(AWSServer, AWSServerAdmin)
 
 5. add a new server record through the admin screen
 
@@ -48,5 +52,7 @@ Usage
 
     (Available management commands: start, stop, state, start-wkdays-only, stop-wkdays-only)
 
-- Starting and stopping of the servers can be scheduled using chron or heroku scheduler with the management commands
+- Starting and stopping of the servers can be scheduled using chron or heroku scheduler using the management commands
+
+- The app can be run as a standalone application using the included project testproject
 
