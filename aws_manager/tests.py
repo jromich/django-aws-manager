@@ -35,7 +35,7 @@ class AWSServerTest(TestCase):
         test_server.save()
 
     def test_server_state(self):
-        """ connect to the server and get it's state """
+        """ connect to the server and get its state """
         test_server = AWSServer.objects.get(pk=1)
         state = test_server.get_server_state()
         self.assertIn(state, ("running", "stopped", "shutting-down", "terminated", "stopping"))
